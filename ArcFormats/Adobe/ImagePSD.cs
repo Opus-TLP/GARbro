@@ -28,8 +28,7 @@ using System;
 using System.ComponentModel.Composition;
 using System.IO;
 using System.Text;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
+using NetFrameworkCompat.Drawing;
 
 namespace GameRes.Formats.Adobe
 {

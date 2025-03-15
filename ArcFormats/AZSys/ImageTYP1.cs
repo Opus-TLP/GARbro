@@ -25,9 +25,8 @@
 
 using System.ComponentModel.Composition;
 using System.IO;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
 using GameRes.Compression;
+using NetFrameworkCompat.Drawing;
 
 namespace GameRes.Formats.AZSys
 {

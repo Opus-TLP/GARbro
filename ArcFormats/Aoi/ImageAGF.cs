@@ -28,9 +28,8 @@ using System.ComponentModel.Composition;
 using System.Diagnostics;
 using System.IO;
 using System.Text;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
 using GameRes.Utility;
+using NetFrameworkCompat.Drawing;
 
 namespace GameRes.Formats.Aoi
 {

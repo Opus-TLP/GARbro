@@ -32,6 +32,7 @@ using System.ComponentModel.Composition;
 using System.Globalization;
 using GameRes.Compression;
 using GameRes.Formats.Strings;
+using NetFrameworkCompat;
 
 namespace GameRes.Formats.Amaterasu
 {

@@ -2,11 +2,11 @@ namespace NetFrameworkCompat;
 
 public class FileFormatException : Exception
 {
-    protected FileFormatException(string message) : base(message)
+    public FileFormatException(string message) : base(message)
     {
     }
 
-    protected FileFormatException(string message, Exception inner) : base(message, inner)
+    public FileFormatException(string message, Exception inner) : base(message, inner)
     {
     }
 }

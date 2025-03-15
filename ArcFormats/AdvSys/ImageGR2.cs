@@ -26,8 +26,8 @@
 using System;
 using System.ComponentModel.Composition;
 using System.IO;
-using System.Windows.Media;
 using GameRes.Utility;
+using NetFrameworkCompat.Drawing;
 
 namespace GameRes.Formats.AdvSys
 {
