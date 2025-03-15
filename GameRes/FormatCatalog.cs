@@ -25,7 +25,6 @@
 
 using System;
 using System.Collections.Generic;
-using System.ComponentModel.Composition;
 using System.ComponentModel.Composition.Hosting;
 using System.IO;
 using System.Linq;
@@ -33,6 +32,8 @@ using GameRes.Collections;
 using System.Runtime.Serialization.Formatters.Binary;
 using GameRes.Compression;
 using System.Threading;
+using NetFrameworkCompat;
+#pragma warning disable SYSLIB0011
 
 namespace GameRes
 {
