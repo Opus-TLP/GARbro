@@ -28,6 +28,7 @@ using System.IO;
 using System.Collections.Generic;
 using System.ComponentModel;
 using GameRes.Strings;
+using NetFrameworkCompat;
 
 namespace GameRes
 {

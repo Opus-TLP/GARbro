@@ -30,6 +30,7 @@ using System.Linq;
 using System.Runtime.ExceptionServices;
 using System.Text.RegularExpressions;
 using GameRes.Strings;
+using NetFrameworkCompat;
 
 namespace GameRes
 {
