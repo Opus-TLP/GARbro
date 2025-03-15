@@ -28,7 +28,6 @@ using System.ComponentModel.Composition;
 using System.IO;
 
 using GameRes.Utility;
-using NetFrameworkCompat.Drawing;
 
 namespace GameRes.Formats.AliceSoft
 {

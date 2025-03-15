@@ -30,7 +30,6 @@ using System.IO;
 
 using GameRes.Compression;
 using GameRes.Utility;
-using NetFrameworkCompat.Drawing;
 
 namespace GameRes.Formats.AZSys
 {

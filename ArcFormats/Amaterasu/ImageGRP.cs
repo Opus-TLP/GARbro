@@ -28,7 +28,6 @@ using System.IO;
 using System.Text;
 using System.ComponentModel.Composition;
 
-using NetFrameworkCompat.Drawing;
 
 namespace GameRes.Formats.Amaterasu
 {

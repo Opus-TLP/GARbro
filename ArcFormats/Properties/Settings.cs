@@ -1,5 +1,4 @@
 ﻿using NetFrameworkCompat.Drawing;
-using NetFrameworkCompat.Drawing;
 using System;
 
 namespace GameRes.Formats.Properties {

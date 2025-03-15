@@ -32,7 +32,6 @@ using System.IO;
 using System.Text;
 
 using GameRes.Utility;
-using NetFrameworkCompat.Drawing;
 
 namespace GameRes.Formats.AdPack
 {
