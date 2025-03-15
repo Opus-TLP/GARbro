@@ -26,10 +26,10 @@
 using System;
 using System.IO;
 using System.Text;
-using System.Windows.Media.Imaging;
 using GameRes.Strings;
 using GameRes.Utility;
 using NetFrameworkCompat;
+using NetFrameworkCompat.Drawing;
 
 namespace GameRes
 {

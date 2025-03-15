@@ -27,8 +27,7 @@ using System;
 using System.Drawing;
 using System.IO;
 using System.Linq;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
+using NetFrameworkCompat.Drawing;
 
 namespace GameRes
 {
@@ -215,13 +214,13 @@ namespace GameRes
             var color_map = new Color[colors];
             Func<int, Color> get_color;
             if (PaletteFormat.Bgr == format || PaletteFormat.BgrX == format)
-                get_color = x => Color.FromRgb (palette_data[x+2], palette_data[x+1], palette_data[x]);
+                get_color = x => Color.FromArgb (palette_data[x+2], palette_data[x+1], palette_data[x]);
             else if (PaletteFormat.BgrA == format)
                 get_color = x => Color.FromArgb (palette_data[x+3], palette_data[x+2], palette_data[x+1], palette_data[x]);
             else if (PaletteFormat.RgbA == format)
                 get_color = x => Color.FromArgb (palette_data[x+3], palette_data[x], palette_data[x+1], palette_data[x+2]);
             else
-                get_color = x => Color.FromRgb (palette_data[x],   palette_data[x+1], palette_data[x+2]);
+                get_color = x => Color.FromArgb (palette_data[x],   palette_data[x+1], palette_data[x+2]);
 
             for (int i = 0; i < colors; ++i)
             {

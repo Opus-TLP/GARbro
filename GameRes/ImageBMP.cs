@@ -27,11 +27,10 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Collections.Generic;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
 using GameRes.Strings;
 using GameRes.Utility;
 using NetFrameworkCompat;
+using NetFrameworkCompat.Drawing;
 
 namespace GameRes
 {

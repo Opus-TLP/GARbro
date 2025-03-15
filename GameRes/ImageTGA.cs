@@ -27,10 +27,9 @@ using System;
 using System.IO;
 using System.Text;
 using System.Windows;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
 using System.Drawing;
 using NetFrameworkCompat;
+using NetFrameworkCompat.Drawing;
 
 namespace GameRes
 {
@@ -236,7 +235,7 @@ namespace GameRes
                     byte b = palette_data[i*pixel_size];
                     byte g = palette_data[i*pixel_size+1];
                     byte r = palette_data[i*pixel_size+2];
-                    palette[i] = Color.FromRgb (r, g, b);
+                    palette[i] = Color.FromArgb (r, g, b);
                 }
                 Palette = new BitmapPalette (palette);
             }

@@ -25,7 +25,7 @@
 
 using System;
 using System.IO;
-using System.Windows.Media.Imaging;
+using NetFrameworkCompat.Drawing;
 
 namespace GameRes
 {
