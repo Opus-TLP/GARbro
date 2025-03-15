@@ -26,6 +26,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Configuration;
+using NetFrameworkCompat.Settings;
 
 namespace GameRes
 {
