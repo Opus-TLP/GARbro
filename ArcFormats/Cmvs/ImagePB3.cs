@@ -23,12 +23,13 @@
 // IN THE SOFTWARE.
 //
 
+using NetFrameworkCompat.Drawing;
 using GameRes.Utility;
 using System;
 using System.ComponentModel.Composition;
 using System.IO;
 using System.Linq;
-using System.Windows.Media;
+
 using System.Collections.Generic;
 
 namespace GameRes.Formats.Purple

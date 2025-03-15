@@ -38,6 +38,7 @@ using GameRes.Compression;
 using GameRes.Utility;
 using GameRes.Formats.Strings;
 
+
 namespace GameRes.Formats.KiriKiri
 {
     public struct Xp3Segment
@@ -595,7 +596,7 @@ NextEntry:
             if (file.Length > int.MaxValue)
                 throw new FileSizeException();
 
-            using (var map = MemoryMappedFile.CreateFromFile (file, null, 0,
+            using (var map = NetFrameworkCompat.MemoryMappedFile.CreateFromFile (file, null, 0,
                     MemoryMappedFileAccess.Read, null, HandleInheritability.None, true))
             {
                 uint unpacked_size    = (uint)file.Length;

@@ -1,4 +1,6 @@
-﻿using GameRes.Formats.Ikura;
+﻿using NetFrameworkCompat.Drawing;
+using NetFrameworkCompat.Drawing;
+using GameRes.Formats.Ikura;
 using GameRes.Formats.Strings;
 using System.Linq;
 using System.Windows.Controls;

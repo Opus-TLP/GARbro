@@ -23,11 +23,13 @@
 // IN THE SOFTWARE.
 //
 
+using NetFrameworkCompat.Drawing;
 using System;
 using System.ComponentModel.Composition;
+using System.Drawing;
 using System.IO;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
+
+
 using GameRes.Utility;
 
 namespace GameRes.Formats.Interheart
@@ -270,7 +272,7 @@ namespace GameRes.Formats.Interheart
             var color_map = new Color[m_colors];
             for (int i = 0; i < m_colors; ++i)
             {
-                color_map[i] = Color.FromRgb (palette_data[src+1], palette_data[src+2], palette_data[src+3]);
+                color_map[i] = Color.FromArgb (palette_data[src+1], palette_data[src+2], palette_data[src+3]);
                 src += 4;
             }
             return new BitmapPalette (color_map);

@@ -23,6 +23,7 @@
 // IN THE SOFTWARE.
 //
 
+using NetFrameworkCompat.Drawing;
 using System;
 using System.IO;
 using System.Linq;
@@ -30,9 +31,9 @@ using System.Text;
 using System.Collections.Generic;
 using System.ComponentModel.Composition;
 using System.Diagnostics;
-using System.Windows;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
+
+
+
 using GameRes.Formats.Strings;
 using GameRes.Utility;
 
@@ -386,9 +387,6 @@ namespace GameRes.Formats.Majiro
 
         public override ResourceOptions GetOptions (object widget)
         {
-            var w = widget as GUI.WidgetRCT;
-            if (null != w)
-                Properties.Settings.Default.RCTPassword = w.Password.Text;
             return GetDefaultOptions();
         }
 

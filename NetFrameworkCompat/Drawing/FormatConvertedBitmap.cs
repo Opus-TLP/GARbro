@@ -7,6 +7,11 @@ public class FormatConvertedBitmap : BitmapSource
         throw new NotImplementedException();
     }
 
+    public FormatConvertedBitmap()
+    {
+        throw new NotImplementedException();
+    }
+
     public void BeginInit()
     {
         throw new NotImplementedException();

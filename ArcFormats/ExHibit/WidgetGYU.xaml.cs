@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using NetFrameworkCompat.Drawing;
+using NetFrameworkCompat.Drawing;
+using System.Collections.Generic;
 using System.Windows.Controls;
 
 namespace GameRes.Formats.GUI

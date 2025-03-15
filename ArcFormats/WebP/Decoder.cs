@@ -36,10 +36,11 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 // C# port by morkt (C) 2016
 //
 
+using NetFrameworkCompat.Drawing;
 using System;
 using System.Diagnostics;
 using System.IO;
-using System.Windows.Media;
+
 using GameRes.Utility;
 
 namespace GameRes.Formats.Google

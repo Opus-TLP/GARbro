@@ -23,10 +23,11 @@
 // IN THE SOFTWARE.
 //
 
+using NetFrameworkCompat.Drawing;
 using System;
 using System.IO;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
+
+
 using GameRes.Compression;
 
 namespace GameRes.Formats.EmonEngine

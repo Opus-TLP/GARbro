@@ -1,4 +1,6 @@
-﻿using GameRes.Formats.Marble;
+﻿using NetFrameworkCompat.Drawing;
+using NetFrameworkCompat.Drawing;
+using GameRes.Formats.Marble;
 using GameRes.Formats.Strings;
 using System.Collections.Generic;
 using System.Linq;

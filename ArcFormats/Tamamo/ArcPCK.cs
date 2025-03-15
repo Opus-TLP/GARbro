@@ -23,14 +23,15 @@
 // IN THE SOFTWARE.
 //
 
+using NetFrameworkCompat.Drawing;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.Composition;
 using System.IO;
 using System.Linq;
-using System.Windows;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
+
+
+
 using GameRes.Cryptography;
 using GameRes.Formats.Strings;
 using ICSharpCode.SharpZipLib.BZip2;
@@ -175,14 +176,17 @@ namespace GameRes.Formats.Tamamo
 
         WriteableBitmap CreateCanvas (int width, int height, BitmapSource src_bitmap, Int32Rect base_region)
         {
-            var canvas = new WriteableBitmap (width, height, ImageData.DefaultDpiX, ImageData.DefaultDpiY,
-                                              src_bitmap.Format, src_bitmap.Palette);
-            int buffer_size = canvas.BackBufferStride * canvas.PixelHeight;
-            canvas.Lock();
-            src_bitmap.CopyPixels (base_region, canvas.BackBuffer, buffer_size, canvas.BackBufferStride);
-            canvas.AddDirtyRect (base_region);
-            canvas.Unlock();
-            return canvas;
+            unsafe
+            {
+                var canvas = new WriteableBitmap (width, height, ImageData.DefaultDpiX, ImageData.DefaultDpiY,
+                    src_bitmap.Format, src_bitmap.Palette);
+                int buffer_size = canvas.BackBufferStride * canvas.PixelHeight;
+                canvas.Lock();
+                src_bitmap.CopyPixels (base_region, (IntPtr)canvas.BackBuffer, buffer_size, canvas.BackBufferStride);
+                canvas.AddDirtyRect (base_region);
+                canvas.Unlock();
+                return canvas;
+            }
         }
 
         /// <summary>

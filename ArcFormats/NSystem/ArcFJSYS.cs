@@ -122,8 +122,6 @@ namespace GameRes.Formats.NSystem
 
         public override ResourceOptions GetOptions (object widget)
         {
-            if (widget is GUI.WidgetMSD)
-                Properties.Settings.Default.FJSYSPassword = ((GUI.WidgetMSD)widget).Password.Text;
             return GetDefaultOptions();
         }
 

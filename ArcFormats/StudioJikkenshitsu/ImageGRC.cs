@@ -23,10 +23,11 @@
 // IN THE SOFTWARE.
 //
 
+using NetFrameworkCompat.Drawing;
 using System.ComponentModel.Composition;
 using System.IO;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
+
+
 
 // [020412][Ciel] Maid Hunter Zero One ~Nora Maid~
 

@@ -1,4 +1,6 @@
-﻿using System.Windows.Controls;
+﻿using NetFrameworkCompat.Drawing;
+using NetFrameworkCompat.Drawing;
+using System.Windows.Controls;
 using GameRes.Formats.Dac;
 using GameRes.Formats.Properties;
 

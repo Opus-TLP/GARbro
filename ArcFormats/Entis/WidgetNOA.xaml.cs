@@ -1,4 +1,6 @@
-﻿using GameRes.Formats.Entis;
+﻿using NetFrameworkCompat.Drawing;
+using NetFrameworkCompat.Drawing;
+using GameRes.Formats.Entis;
 using GameRes.Formats.Strings;
 using System.Linq;
 using System.Windows.Controls;

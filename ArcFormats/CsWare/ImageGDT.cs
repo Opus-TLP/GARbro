@@ -23,12 +23,14 @@
 // IN THE SOFTWARE.
 //
 
+using NetFrameworkCompat.Drawing;
 using GameRes.Utility;
 using System;
 using System.ComponentModel.Composition;
+using System.Drawing;
 using System.IO;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
+
+
 
 namespace GameRes.Formats.CsWare
 {
@@ -560,7 +562,7 @@ namespace GameRes.Formats.CsWare
                     int b = bits.GetBits (4) * 0x11;
                     int r = bits.GetBits (4) * 0x11;
                     int g = bits.GetBits (4) * 0x11;
-                    colors[i] = Color.FromRgb ((byte)r, (byte)g, (byte)b);
+                    colors[i] = Color.FromArgb ((byte)r, (byte)g, (byte)b);
                 }
                 return new BitmapPalette (colors);
             }

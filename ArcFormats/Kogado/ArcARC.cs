@@ -23,6 +23,7 @@
 // IN THE SOFTWARE.
 //
 
+using NetFrameworkCompat.Drawing;
 using GameRes.Compression;
 using GameRes.Formats.DirectDraw;
 using System;
@@ -30,7 +31,7 @@ using System.Collections.Generic;
 using System.ComponentModel.Composition;
 using System.IO;
 using System.Text;
-using System.Windows.Media;
+
 
 // [070302][G-mode] Keitai Shoujo
 

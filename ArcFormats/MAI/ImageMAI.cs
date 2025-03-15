@@ -23,12 +23,14 @@
 // IN THE SOFTWARE.
 //
 
+using NetFrameworkCompat.Drawing;
 using System;
 using System.ComponentModel.Composition;
+using System.Drawing;
 using System.IO;
 using System.Text;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
+
+
 using GameRes.Utility;
 
 namespace GameRes.Formats.MAI
@@ -233,7 +235,7 @@ namespace GameRes.Formats.MAI
                 m_pixels = new byte[m_width*m_height*4];
             }
 
-            static readonly Color Default8bppTransparencyColor = Color.FromRgb (0, 0xFE, 0);
+            static readonly Color Default8bppTransparencyColor = Color.FromArgb (0, 0xFE, 0);
 
             public void Unpack ()
             {
@@ -264,7 +266,7 @@ namespace GameRes.Formats.MAI
                 else
                 {
                     const int alphaScale = 0x11;
-                    var alphaColor = Color.FromRgb (0, 0xFE, 0);
+                    var alphaColor = Color.FromArgb (0, 0xFE, 0);
                     copy_pixel = (src, dst, alpha) => {
                         var color = Palette.Colors[m_output[src]];
                         if (Default8bppTransparencyColor == color)

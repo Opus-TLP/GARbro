@@ -1,5 +1,7 @@
-﻿using System.Linq;
-using System.Windows;
+﻿using NetFrameworkCompat.Drawing;
+using NetFrameworkCompat.Drawing;
+using System.Linq;
+
 using System.Windows.Controls;
 using GameRes.Formats.Properties;
 using GameRes.Formats.Selene;

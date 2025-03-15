@@ -23,11 +23,13 @@
 // IN THE SOFTWARE.
 //
 
+using NetFrameworkCompat.Drawing;
 using System;
 using System.ComponentModel.Composition;
+using System.Drawing;
 using System.IO;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
+
+
 using GameRes.Utility;
 
 namespace GameRes.Formats.Ivory
@@ -91,7 +93,7 @@ namespace GameRes.Formats.Ivory
             for (int i = 0; i <= MaxAlpha; ++i)
             {
                 byte g = (byte)(i * 0xFF / MaxAlpha);
-                colors[i] = Color.FromRgb (g, g, g);
+                colors[i] = Color.FromArgb (g, g, g);
             }
             var palette = new BitmapPalette (colors);
             return ImageData.Create (info, PixelFormats.Indexed8, palette, pixels);

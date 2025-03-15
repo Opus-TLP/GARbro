@@ -23,10 +23,12 @@
 // IN THE SOFTWARE.
 //
 
+using NetFrameworkCompat.Drawing;
 using System.ComponentModel.Composition;
+using System.Drawing;
 using System.IO;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
+
+
 using GameRes.Utility;
 
 namespace GameRes.Formats.Ikura
@@ -123,7 +125,7 @@ namespace GameRes.Formats.Ikura
             var color_map = new Color[0x100];
             for (int i = 0; i < 0x100; ++i)
             {
-                color_map[i] = Color.FromRgb (palette_data[src+1], palette_data[src+2], palette_data[src]);
+                color_map[i] = Color.FromArgb (palette_data[src+1], palette_data[src+2], palette_data[src]);
                 src += 3;
             }
             return new BitmapPalette (color_map);

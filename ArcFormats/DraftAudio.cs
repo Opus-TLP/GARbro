@@ -21,7 +21,7 @@
 
 using System.ComponentModel.Composition;
 
-namespace GameRes.Formats.??????
+namespace GameRes.Formats
 {
     [Export(typeof(AudioFormat))]
     public class xxxAudio : AudioFormat

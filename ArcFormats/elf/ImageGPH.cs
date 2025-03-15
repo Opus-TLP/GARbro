@@ -23,11 +23,13 @@
 // IN THE SOFTWARE.
 //
 
+using NetFrameworkCompat.Drawing;
 using System;
 using System.ComponentModel.Composition;
+using System.Drawing;
 using System.IO;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
+
+
 using GameRes.Utility;
 
 namespace GameRes.Formats.Elf
@@ -407,7 +409,7 @@ namespace GameRes.Formats.Elf
                 int b = (rgb << 2) & 0x3C;
                 rgb = m_input.ReadByte();
                 int g = (rgb << 2) & 0x3C;
-                palette[i] = Color.FromRgb (Clamp (r), Clamp (g), Clamp (b));
+                palette[i] = Color.FromArgb (Clamp (r), Clamp (g), Clamp (b));
             }
             Palette = new BitmapPalette (palette);
         }
@@ -416,14 +418,14 @@ namespace GameRes.Formats.Elf
         {
             var palette = new Color[0x10]
             {
-                Color.FromRgb (0x00, 0x00, 0x00), Color.FromRgb (0x00, 0x00, 0xAA),
-                Color.FromRgb (0x00, 0xAA, 0x00), Color.FromRgb (0x00, 0xAA, 0xAA),
-                Color.FromRgb (0xAA, 0x00, 0x00), Color.FromRgb (0xAA, 0x00, 0xAA),
-                Color.FromRgb (0xAA, 0xAA, 0x00), Color.FromRgb (0xAA, 0xAA, 0xAA),
-                Color.FromRgb (0x88, 0x88, 0x88), Color.FromRgb (0x00, 0x00, 0xFF),
-                Color.FromRgb (0x00, 0xFF, 0x00), Color.FromRgb (0x00, 0xFF, 0xFF),
-                Color.FromRgb (0xFF, 0x00, 0x00), Color.FromRgb (0xFF, 0x00, 0xFF),
-                Color.FromRgb (0xFF, 0xFF, 0x00), Color.FromRgb (0xFF, 0xFF, 0xFF),
+                Color.FromArgb (0x00, 0x00, 0x00), Color.FromArgb (0x00, 0x00, 0xAA),
+                Color.FromArgb (0x00, 0xAA, 0x00), Color.FromArgb (0x00, 0xAA, 0xAA),
+                Color.FromArgb (0xAA, 0x00, 0x00), Color.FromArgb (0xAA, 0x00, 0xAA),
+                Color.FromArgb (0xAA, 0xAA, 0x00), Color.FromArgb (0xAA, 0xAA, 0xAA),
+                Color.FromArgb (0x88, 0x88, 0x88), Color.FromArgb (0x00, 0x00, 0xFF),
+                Color.FromArgb (0x00, 0xFF, 0x00), Color.FromArgb (0x00, 0xFF, 0xFF),
+                Color.FromArgb (0xFF, 0x00, 0x00), Color.FromArgb (0xFF, 0x00, 0xFF),
+                Color.FromArgb (0xFF, 0xFF, 0x00), Color.FromArgb (0xFF, 0xFF, 0xFF),
             };
             Palette = new BitmapPalette (palette);
         }

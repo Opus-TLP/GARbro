@@ -23,11 +23,13 @@
 // IN THE SOFTWARE.
 //
 
+using NetFrameworkCompat.Drawing;
 using System;
 using System.ComponentModel.Composition;
+using System.Drawing;
 using System.IO;
 using System.Text.RegularExpressions;
-using System.Windows.Media;
+
 using System.Xml;
 using GameRes.Compression;
 using GameRes.Utility;
@@ -168,7 +170,7 @@ namespace GameRes.Formats.LiveMaker
                 byte r = HexToByte (rgb, pos);
                 byte g = HexToByte (rgb, pos+2);
                 byte b = HexToByte (rgb, pos+4);
-                color_map[i] = Color.FromRgb (r, g, b);
+                color_map[i] = Color.FromArgb (r, g, b);
                 pos += 6;
             }
             return color_map;

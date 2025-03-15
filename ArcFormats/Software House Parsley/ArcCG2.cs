@@ -23,10 +23,11 @@
 // IN THE SOFTWARE.
 //
 
+using NetFrameworkCompat.Drawing;
 using System.Collections.Generic;
 using System.ComponentModel.Composition;
 using System.IO;
-using System.Windows.Media;
+
 using GameRes.Compression;
 
 // [051111][Software House Parsley] Sonic Princess Platinum Edition

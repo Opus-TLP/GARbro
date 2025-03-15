@@ -1,4 +1,6 @@
-﻿using GameRes.Formats.Qlie;
+﻿using NetFrameworkCompat.Drawing;
+using NetFrameworkCompat.Drawing;
+using GameRes.Formats.Qlie;
 using GameRes.Formats.Strings;
 using System.Windows.Controls;
 using System.Linq;

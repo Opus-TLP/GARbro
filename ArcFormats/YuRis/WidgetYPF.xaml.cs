@@ -1,6 +1,8 @@
-﻿using System.Collections.Generic;
+﻿using NetFrameworkCompat.Drawing;
+using NetFrameworkCompat.Drawing;
+using System.Collections.Generic;
 using System.Linq;
-using System.Windows;
+
 using System.Windows.Controls;
 using GameRes.Formats.Properties;
 using GameRes.Formats.Strings;

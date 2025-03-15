@@ -23,11 +23,13 @@
 // IN THE SOFTWARE.
 //
 
+using NetFrameworkCompat.Drawing;
 using System;
 using System.ComponentModel.Composition;
+using System.Drawing;
 using System.IO;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
+
+
 
 namespace GameRes.Formats.Leaf
 {
@@ -190,10 +192,10 @@ namespace GameRes.Formats.Leaf
                 if (m_key_color == i)
                     colors[i] = Color.FromArgb (0, color_data[src], color_data[src+1], color_data[src+2]);
                 else
-                    colors[i] = Color.FromRgb (color_data[src], color_data[src+1], color_data[src+2]);
+                    colors[i] = Color.FromArgb (color_data[src], color_data[src+1], color_data[src+2]);
                 src += 3;
             }
-//            colors[15] = Color.FromRgb (0xFF, 0xFF, 0xFF);
+//            colors[15] = Color.FromArgb (0xFF, 0xFF, 0xFF);
             return new BitmapPalette (colors);
         }
 

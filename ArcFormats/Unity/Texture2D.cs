@@ -23,10 +23,11 @@
 // IN THE SOFTWARE.
 //
 
+using NetFrameworkCompat.Drawing;
 using System;
 using System.Collections;
 using System.IO;
-using System.Windows.Media;
+
 using GameRes.Formats.DirectDraw;
 using GameRes.Utility;
 

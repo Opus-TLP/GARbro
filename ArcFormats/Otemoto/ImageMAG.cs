@@ -23,11 +23,13 @@
 // IN THE SOFTWARE.
 //
 
+using NetFrameworkCompat.Drawing;
 using System;
 using System.ComponentModel.Composition;
+using System.Drawing;
 using System.IO;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
+
+
 using GameRes.Utility;
 
 namespace GameRes.Formats.Otemoto
@@ -178,7 +180,7 @@ namespace GameRes.Formats.Otemoto
             int src = 0;
             for (int i = 0; i < colors; ++i)
             {
-                color_map[i] = Color.FromRgb (palette_data[src+1], palette_data[src], palette_data[src+2]);
+                color_map[i] = Color.FromArgb (palette_data[src+1], palette_data[src], palette_data[src+2]);
                 src += 3;
             }
             return new BitmapPalette (color_map);

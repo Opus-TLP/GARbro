@@ -19,11 +19,12 @@
 // IN THE SOFTWARE.
 //
 
+using NetFrameworkCompat.Drawing;
 using System.ComponentModel.Composition;
 using System.IO;
-using System.Windows.Media;
 
-namespace GameRes.Formats.??????
+
+namespace GameRes.Formats
 {
     [Export(typeof(ImageFormat))]
     public class xxxFormat : ImageFormat

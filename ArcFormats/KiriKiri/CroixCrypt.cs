@@ -23,6 +23,8 @@
 // IN THE SOFTWARE.
 //
 
+using System;
+
 namespace GameRes.Formats.KiriKiri
 {
     [Serializable]

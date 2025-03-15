@@ -23,10 +23,12 @@
 // IN THE SOFTWARE.
 //
 
+using NetFrameworkCompat.Drawing;
 using System.ComponentModel.Composition;
+using System.Drawing;
 using System.IO;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
+
+
 
 namespace GameRes.Formats.Interheart
 {
@@ -68,28 +70,28 @@ namespace GameRes.Formats.Interheart
             var colors = new Color[256];
             for (int i = 8; i < 256; ++i)
             {
-                colors[i] = Color.FromRgb ((byte)i, (byte)i, (byte)i);
+                colors[i] = Color.FromArgb ((byte)i, (byte)i, (byte)i);
             }
-            colors[0] = Color.FromRgb (0x00, 0x00, 0x00);
-            colors[1] = Color.FromRgb (0x00, 0x00, 0x7F);
-            colors[2] = Color.FromRgb (0x00, 0x7F, 0x00);
-            colors[3] = Color.FromRgb (0x00, 0x7F, 0x7F);
-            colors[4] = Color.FromRgb (0x7F, 0x00, 0x00);
-            colors[5] = Color.FromRgb (0x7F, 0x00, 0x7F);
-            colors[6] = Color.FromRgb (0x7F, 0x7F, 0x00);
-            colors[7] = Color.FromRgb (0x7F, 0x7F, 0x7F);
-            colors[8] = Color.FromRgb (0x00, 0x00, 0xFF);
-            colors[9] = Color.FromRgb (0x00, 0xFF, 0x00);
-            colors[10] = Color.FromRgb (0x00, 0xFF, 0xFF);
-            colors[11] = Color.FromRgb (0xFF, 0x00, 0x00);
-            colors[12] = Color.FromRgb (0xFF, 0x00, 0xFF);
-            colors[13] = Color.FromRgb (0xFF, 0xFF, 0x00);
-            colors[14] = Color.FromRgb (0xFF, 0xFF, 0xFF);
-            colors[15] = Color.FromRgb (0xFF, 0x00, 0x7F);
-            colors[16] = Color.FromRgb (0xFF, 0x7F, 0x00);
-            colors[16] = Color.FromRgb (0xFF, 0x7F, 0x7F);
-            colors[17] = Color.FromRgb (0x7F, 0x00, 0xFF);
-            colors[18] = Color.FromRgb (0xFF, 0xFF, 0x7F);
+            colors[0] = Color.FromArgb (0x00, 0x00, 0x00);
+            colors[1] = Color.FromArgb (0x00, 0x00, 0x7F);
+            colors[2] = Color.FromArgb (0x00, 0x7F, 0x00);
+            colors[3] = Color.FromArgb (0x00, 0x7F, 0x7F);
+            colors[4] = Color.FromArgb (0x7F, 0x00, 0x00);
+            colors[5] = Color.FromArgb (0x7F, 0x00, 0x7F);
+            colors[6] = Color.FromArgb (0x7F, 0x7F, 0x00);
+            colors[7] = Color.FromArgb (0x7F, 0x7F, 0x7F);
+            colors[8] = Color.FromArgb (0x00, 0x00, 0xFF);
+            colors[9] = Color.FromArgb (0x00, 0xFF, 0x00);
+            colors[10] = Color.FromArgb (0x00, 0xFF, 0xFF);
+            colors[11] = Color.FromArgb (0xFF, 0x00, 0x00);
+            colors[12] = Color.FromArgb (0xFF, 0x00, 0xFF);
+            colors[13] = Color.FromArgb (0xFF, 0xFF, 0x00);
+            colors[14] = Color.FromArgb (0xFF, 0xFF, 0xFF);
+            colors[15] = Color.FromArgb (0xFF, 0x00, 0x7F);
+            colors[16] = Color.FromArgb (0xFF, 0x7F, 0x00);
+            colors[16] = Color.FromArgb (0xFF, 0x7F, 0x7F);
+            colors[17] = Color.FromArgb (0x7F, 0x00, 0xFF);
+            colors[18] = Color.FromArgb (0xFF, 0xFF, 0x7F);
             return colors;
         }
     }

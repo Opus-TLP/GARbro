@@ -23,11 +23,12 @@
 // IN THE SOFTWARE.
 //
 
+using NetFrameworkCompat.Drawing;
 using System.Collections.Generic;
 using System.ComponentModel.Composition;
 using System.IO;
 using System.Linq;
-using System.Windows.Media;
+
 using GameRes.Utility;
 
 namespace GameRes.Formats.Zyx

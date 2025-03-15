@@ -31,6 +31,7 @@ using System.IO;
 using System.Linq;
 using System.Runtime.Serialization.Formatters.Binary;
 using GameRes.Utility;
+#pragma warning disable SYSLIB0011
 
 namespace GameRes.Formats.YaneSDK
 {

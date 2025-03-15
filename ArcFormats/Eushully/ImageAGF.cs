@@ -23,12 +23,14 @@
 // IN THE SOFTWARE.
 //
 
+using NetFrameworkCompat.Drawing;
 using GameRes.Compression;
 using GameRes.Utility;
 using System;
 using System.ComponentModel.Composition;
+using System.Drawing;
 using System.IO;
-using System.Windows.Media;
+
 
 namespace GameRes.Formats.Eushully
 {

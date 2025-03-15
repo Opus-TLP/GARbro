@@ -23,11 +23,13 @@
 // IN THE SOFTWARE.
 //
 
+using NetFrameworkCompat.Drawing;
 using System;
 using System.ComponentModel.Composition;
+using System.Drawing;
 using System.IO;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
+
+
 using GameRes.Compression;
 using GameRes.Utility;
 
@@ -144,7 +146,7 @@ namespace GameRes.Formats.Circus
                     byte b = palette_data[color_pos+2];
                     if (0xff == b && 0 == g && 0xff == r)
                         g = 0xff;
-                    palette[i] = Color.FromRgb (r, g, b);
+                    palette[i] = Color.FromArgb (r, g, b);
                     color_pos += color_size;
                 }
                 Palette = new BitmapPalette (palette);

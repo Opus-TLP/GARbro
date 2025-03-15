@@ -23,10 +23,11 @@
 // IN THE SOFTWARE.
 //
 
+using NetFrameworkCompat.Drawing;
 using System;
 using System.ComponentModel.Composition;
 using System.IO;
-using System.Windows.Media;
+
 
 namespace GameRes.Formats.Foster
 {

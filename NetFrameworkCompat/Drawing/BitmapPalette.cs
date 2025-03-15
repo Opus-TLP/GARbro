@@ -4,5 +4,5 @@ namespace NetFrameworkCompat.Drawing;
 
 public class BitmapPalette(Color[] readColorMap)
 {
-    public Color[] Colors { get; set; }
+    public IList<Color> Colors { get; set; }
 }

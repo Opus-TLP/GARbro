@@ -23,12 +23,14 @@
 // IN THE SOFTWARE.
 //
 
+using NetFrameworkCompat.Drawing;
 using GameRes.Utility;
 using System;
 using System.ComponentModel.Composition;
+using System.Drawing;
 using System.IO;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
+
+
 
 namespace GameRes.Formats.Eushully
 {
@@ -211,7 +213,7 @@ namespace GameRes.Formats.Eushully
             for (int i = 0; i < palette.Length; ++i)
             {
                 int c = i * 3;
-                palette[i] = Color.FromRgb (palette_data[c], palette_data[c+1], palette_data[c+2]);
+                palette[i] = Color.FromArgb (palette_data[c], palette_data[c+1], palette_data[c+2]);
             }
             Palette = new BitmapPalette (palette);
         }

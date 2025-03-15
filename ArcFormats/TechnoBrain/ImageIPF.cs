@@ -23,11 +23,13 @@
 // IN THE SOFTWARE.
 //
 
+using NetFrameworkCompat.Drawing;
 using System;
 using System.ComponentModel.Composition;
+using System.Drawing;
 using System.IO;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
+
+
 using GameRes.Utility;
 
 namespace GameRes.Formats.TechnoBrain
@@ -196,7 +198,7 @@ namespace GameRes.Formats.TechnoBrain
                     {
                         if (dst >= min_index && dst <= max_index)
                         {
-                            color_map[dst] = Color.FromRgb (data[src], data[src+1], data[src+2]);
+                            color_map[dst] = Color.FromArgb (data[src], data[src+1], data[src+2]);
                         }
                         src += 3;
                     }

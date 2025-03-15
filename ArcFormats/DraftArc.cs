@@ -24,7 +24,7 @@ using System.Collections.Generic;
 using System.ComponentModel.Composition;
 using System.IO;
 
-namespace GameRes.Formats.??????
+namespace GameRes.Formats
 {
     [Export(typeof(ArchiveFormat))]
     public class PakOpener : ArchiveFormat

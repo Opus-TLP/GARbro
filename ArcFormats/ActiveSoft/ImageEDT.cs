@@ -23,13 +23,14 @@
 // IN THE SOFTWARE.
 //
 
+using NetFrameworkCompat.Drawing;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.Composition;
 using System.Drawing;
 using System.IO;
 using System.Text;
-using System.Windows;
+
 using GameRes.Utility;
 using NetFrameworkCompat.Drawing;
 

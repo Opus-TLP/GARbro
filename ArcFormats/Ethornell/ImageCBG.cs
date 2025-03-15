@@ -23,10 +23,11 @@
 // IN THE SOFTWARE.
 //
 
+using NetFrameworkCompat.Drawing;
 using System;
 using System.ComponentModel.Composition;
 using System.IO;
-using System.Windows.Media;
+
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;

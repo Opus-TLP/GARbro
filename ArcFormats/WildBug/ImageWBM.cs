@@ -23,11 +23,13 @@
 // IN THE SOFTWARE.
 //
 
+using NetFrameworkCompat.Drawing;
 using System;
 using System.ComponentModel.Composition;
+using System.Drawing;
 using System.IO;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
+
+
 using GameRes.Utility;
 
 namespace GameRes.Formats.WildBug
@@ -201,7 +203,7 @@ namespace GameRes.Formats.WildBug
             for (int i = 0; i < colors; ++i)
             {
                 int c = i * 3;
-                palette[i] = Color.FromRgb (palette_data[c], palette_data[c+1], palette_data[c+2]);
+                palette[i] = Color.FromArgb (palette_data[c], palette_data[c+1], palette_data[c+2]);
             }
             return new BitmapPalette (palette);
         }

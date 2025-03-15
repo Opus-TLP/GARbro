@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using NetFrameworkCompat.Drawing;
+using NetFrameworkCompat.Drawing;
+using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Controls;
 using GameRes.Formats.NSystem;

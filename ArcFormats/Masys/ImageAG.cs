@@ -23,9 +23,10 @@
 // IN THE SOFTWARE.
 //
 
+using NetFrameworkCompat.Drawing;
 using System;
 using System.ComponentModel.Composition;
-using System.Windows.Media;
+
 using System.IO;
 
 namespace GameRes.Formats.Megu

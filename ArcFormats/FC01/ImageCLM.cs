@@ -23,12 +23,13 @@
 // IN THE SOFTWARE.
 //
 
+using NetFrameworkCompat.Drawing;
 using GameRes.Utility;
 using System;
 using System.ComponentModel.Composition;
 using System.IO;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
+
+
 
 namespace GameRes.Formats.FC01
 {

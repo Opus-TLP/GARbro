@@ -23,12 +23,13 @@
 // IN THE SOFTWARE.
 //
 
+using NetFrameworkCompat.Drawing;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.Composition;
 using System.IO;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
+
+
 using GameRes.Formats.Strings;
 
 // [010719][Studio Jikkenshitsu] Shin Gekka Bijin ~Hitori Shizuka

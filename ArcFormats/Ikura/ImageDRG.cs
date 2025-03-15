@@ -23,14 +23,16 @@
 // IN THE SOFTWARE.
 //
 
+using NetFrameworkCompat.Drawing;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.Composition;
+using System.Drawing;
 using System.IO;
 using System.Text;
-using System.Windows;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
+
+
+
 using GameRes.Compression;
 using GameRes.Utility;
 
@@ -462,7 +464,7 @@ namespace GameRes.Formats.Ikura
             var colors = new Color[256];
             for (int i = 0; i < 256; ++i)
             {
-                colors[i] = Color.FromRgb (palette_data[i*4+2], palette_data[i*4+1], palette_data[i*4]);
+                colors[i] = Color.FromArgb (palette_data[i*4+2], palette_data[i*4+1], palette_data[i*4]);
             }
             file.Seek (4, SeekOrigin.Current);
             int input_size = (int)(file.Length - file.Position);

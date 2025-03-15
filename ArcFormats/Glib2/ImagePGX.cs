@@ -23,6 +23,7 @@
 // IN THE SOFTWARE.
 //
 
+using NetFrameworkCompat.Drawing;
 using GameRes.Utility;
 using System;
 using System.Collections.Generic;
@@ -31,7 +32,7 @@ using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
-using System.Windows.Media;
+
 
 namespace GameRes.Formats.Glib2
 {

@@ -23,9 +23,10 @@
 // IN THE SOFTWARE.
 //
 
+using NetFrameworkCompat.Drawing;
 using System.ComponentModel.Composition;
 using System.IO;
-using System.Windows.Media.Imaging;
+
 using GameRes.Formats.Ankh;
 
 // [000324][Juice] Orgel ~Kesenai Melody~

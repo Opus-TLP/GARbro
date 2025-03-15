@@ -6,4 +6,9 @@ public class BitmapFrame : BitmapSource
     {
         throw new NotImplementedException();
     }
+
+    public static BitmapFrame Create(BitmapSource mBitmap)
+    {
+        throw new NotImplementedException();
+    }
 }

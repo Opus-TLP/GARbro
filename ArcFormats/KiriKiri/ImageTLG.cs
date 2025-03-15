@@ -8,10 +8,11 @@
 // C# port by morkt
 //
 
+using NetFrameworkCompat.Drawing;
 using System;
 using System.IO;
 using System.ComponentModel.Composition;
-using System.Windows.Media;
+
 using GameRes.Utility;
 using System.Collections.Generic;
 using System.Diagnostics;

@@ -23,6 +23,7 @@
 // IN THE SOFTWARE.
 //
 
+using NetFrameworkCompat.Drawing;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.Composition;
@@ -31,7 +32,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
-using System.Windows.Media;
+
 using GameRes.Formats.Strings;
 using GameRes.Utility;
 

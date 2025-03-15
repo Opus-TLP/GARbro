@@ -23,11 +23,12 @@
 // IN THE SOFTWARE.
 //
 
+using NetFrameworkCompat.Drawing;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.Composition;
 using System.IO;
-using System.Windows.Media;
+
 
 // [050610][Software House Parsley] Desert Time Mugen no Meikyuu PE
 

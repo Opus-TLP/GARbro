@@ -23,11 +23,13 @@
 // IN THE SOFTWARE.
 //
 
+using NetFrameworkCompat.Drawing;
 using System;
 using System.ComponentModel.Composition;
+using System.Drawing;
 using System.IO;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
+
+
 using GameRes.Utility;
 
 namespace GameRes.Formats.Majiro
@@ -93,7 +95,7 @@ namespace GameRes.Formats.Majiro
                 m_palette = new Color[0x100];
                 for (int i = 0; i < 0x100; ++i)
                 {
-                    m_palette[i] = Color.FromRgb (palette_data[i*3], palette_data[i*3+1], palette_data[i*3+2]);
+                    m_palette[i] = Color.FromArgb (palette_data[i*3], palette_data[i*3+1], palette_data[i*3+2]);
                 }
                 m_data = new byte[m_width * info.Height];
                 m_input = file;

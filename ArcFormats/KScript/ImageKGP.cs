@@ -23,10 +23,11 @@
 // IN THE SOFTWARE.
 //
 
+using NetFrameworkCompat.Drawing;
 using System.ComponentModel.Composition;
 using System.IO;
 using System.Security.Cryptography;
-using System.Windows.Media;
+
 using GameRes.Utility;
 
 namespace GameRes.Formats.KScript

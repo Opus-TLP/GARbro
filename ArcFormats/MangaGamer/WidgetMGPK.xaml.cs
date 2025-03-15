@@ -1,4 +1,6 @@
-﻿using System.Linq;
+﻿using NetFrameworkCompat.Drawing;
+using NetFrameworkCompat.Drawing;
+using System.Linq;
 using System.Windows.Controls;
 using GameRes.Formats.Mg;
 using GameRes.Formats.Strings;

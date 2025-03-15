@@ -23,13 +23,15 @@
 // IN THE SOFTWARE.
 //
 
+using NetFrameworkCompat.Drawing;
 using GameRes.Compression;
 using GameRes.Utility;
 using System;
 using System.ComponentModel.Composition;
+using System.Drawing;
 using System.IO;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
+
+
 
 namespace GameRes.Formats.FVP
 {
@@ -126,7 +128,7 @@ namespace GameRes.Formats.FVP
             case 4:
                 {
                     Format = PixelFormats.Indexed8;
-                    var colors = new Color[2] { Color.FromRgb (0,0,0), Color.FromRgb (0xFF,0xFF,0xFF) };
+                    var colors = new Color[2] { Color.FromArgb (0,0,0), Color.FromArgb (0xFF,0xFF,0xFF) };
                     Palette = new BitmapPalette (colors);
                     break;
                 }

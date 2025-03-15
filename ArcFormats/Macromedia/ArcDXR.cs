@@ -23,15 +23,17 @@
 // IN THE SOFTWARE.
 //
 
+using NetFrameworkCompat.Drawing;
 using GameRes.Compression;
 using GameRes.Utility;
 using System.Collections.Generic;
 using System.ComponentModel.Composition;
+using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
+
+
 
 namespace GameRes.Formats.Macromedia
 {
@@ -378,7 +380,7 @@ namespace GameRes.Formats.Macromedia
             var colors = new Color[num_colors];
             for (int i = 0; i < data.Length; i += 6)
             {
-                colors[i/6] = Color.FromRgb (data[i], data[i+2], data[i+4]);
+                colors[i/6] = Color.FromArgb (data[i], data[i+2], data[i+4]);
             }
             return new BitmapPalette (colors);
         }

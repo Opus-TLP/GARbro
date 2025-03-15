@@ -23,12 +23,14 @@
 // IN THE SOFTWARE.
 //
 
+using NetFrameworkCompat.Drawing;
 using GameRes.Utility;
 using System;
 using System.ComponentModel.Composition;
+using System.Drawing;
 using System.IO;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
+
+
 
 namespace GameRes.Formats.Apple
 {
@@ -239,12 +241,12 @@ namespace GameRes.Formats.Apple
                                     int r = m_input.ReadU16BE() / 0x101;
                                     int g = m_input.ReadU16BE() / 0x101;
                                     int b = m_input.ReadU16BE() / 0x101;
-                                    colormap[c] = Color.FromRgb ((byte)r, (byte)g, (byte)b);
+                                    colormap[c] = Color.FromArgb ((byte)r, (byte)g, (byte)b);
                                 }
                             }
                             else
                             {
-                                var White = Color.FromRgb (0xFF, 0xFF, 0xFF);
+                                var White = Color.FromArgb (0xFF, 0xFF, 0xFF);
                                 for (int i = 0; i < colors; i++)
                                 {
                                     colormap[i] = Color.Subtract (White, colormap[i]);

@@ -23,11 +23,12 @@
 // IN THE SOFTWARE.
 //
 
+using NetFrameworkCompat.Drawing;
 using System;
 using System.IO;
 using System.ComponentModel.Composition;
-using System.Windows.Media.Imaging;
-using System.Windows.Media;
+
+
 using GameRes.Compression;
 using GameRes.Utility;
 using System.Collections.Generic;

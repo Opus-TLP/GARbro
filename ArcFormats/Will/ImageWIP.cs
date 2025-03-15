@@ -23,13 +23,14 @@
 // IN THE SOFTWARE.
 //
 
+using NetFrameworkCompat.Drawing;
 using System;
 using System.IO;
 using System.Text;
 using System.Diagnostics;
 using System.ComponentModel.Composition;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
+using System.Drawing;
+
 
 namespace GameRes.Formats.Will
 {

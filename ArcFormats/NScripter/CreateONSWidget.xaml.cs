@@ -1,4 +1,6 @@
-﻿using System;
+﻿using NetFrameworkCompat.Drawing;
+using NetFrameworkCompat.Drawing;
+using System;
 using System.Globalization;
 using System.Windows.Controls;
 using System.Windows.Data;

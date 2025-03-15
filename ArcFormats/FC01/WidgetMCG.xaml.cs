@@ -1,4 +1,6 @@
-﻿using GameRes.Formats.FC01;
+﻿using NetFrameworkCompat.Drawing;
+using NetFrameworkCompat.Drawing;
+using GameRes.Formats.FC01;
 using GameRes.Formats.Strings;
 using System;
 using System.Collections.Generic;

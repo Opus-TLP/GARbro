@@ -23,10 +23,11 @@
 // IN THE SOFTWARE.
 //
 
+using NetFrameworkCompat.Drawing;
 using System.IO;
 using System.Text;
 using System.ComponentModel.Composition;
-using System.Windows;
+
 using NetFrameworkCompat.Drawing;
 
 namespace GameRes.Formats.Amaterasu

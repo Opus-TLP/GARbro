@@ -221,20 +221,18 @@ namespace GameRes.Formats.NScripter
 
         public override ResourceOptions GetOptions (object widget)
         {
-            var w = widget as GUI.WidgetNSA;
-            if (null != w)
-                Properties.Settings.Default.NSAPassword = w.Password.Text;
+ 
             return GetDefaultOptions();
         }
 
         public override object GetAccessWidget ()
         {
-            return new GUI.WidgetNSA (KnownKeys);
+            return null;
         }
 
         public override object GetCreationWidget ()
         {
-            return new GUI.CreateONSWidget();
+            return null;
         }
 
         public override void Create (Stream output, IEnumerable<Entry> list, ResourceOptions options,

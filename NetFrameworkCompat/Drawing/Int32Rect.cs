@@ -6,6 +6,8 @@ public struct Int32Rect
     public int Y { get; set; }
     public int Width { get; set; }
     public int Height { get; set; }
+    public bool HasArea { get; set; }
+    public static Int32Rect Empty { get; set; }
 
     public Int32Rect(int x, int y, int width, int height)
     {

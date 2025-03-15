@@ -87,6 +87,8 @@
     <Reference Include="WindowsBase" />
     -->
   
+    <PackageReference Include="NVorbis" Version="0.10.5" />
+  
     <PackageReference Include="SharpZipLib" Version="1.4.2" />
   </ItemGroup>
   <ItemGroup>

@@ -196,8 +196,6 @@ namespace GameRes.Formats.PkWare
 
         public override ResourceOptions GetOptions (object widget)
         {
-            if (widget is GUI.WidgetZIP)
-                Properties.Settings.Default.ZIPPassword = ((GUI.WidgetZIP)widget).Password.Text;
             return GetDefaultOptions();
         }
 

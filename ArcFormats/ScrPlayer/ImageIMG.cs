@@ -23,11 +23,12 @@
 // IN THE SOFTWARE.
 //
 
+using NetFrameworkCompat.Drawing;
 using GameRes.Utility;
 using System;
 using System.ComponentModel.Composition;
 using System.IO;
-using System.Windows.Media;
+
 
 // [990709][Love Gun] Koi no Sweet Tart wa Ikaga
 
