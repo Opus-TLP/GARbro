@@ -35,13 +35,12 @@ namespace GameRes.Formats
 
         public override ImageMetaData ReadMetaData (IBinaryStream file)
         {
+            throw new System.NotImplementedException ("xxxFormat.ReadMetaData not implemented");
         }
 
         public override ImageData Read (IBinaryStream file, ImageMetaData info)
         {
-            var meta = (xxxMetaData)info;
-
-            return ImageData.Create (info, format, palette, pixels);
+            throw new System.NotImplementedException ("xxxFormat.Read not implemented");
         }
 
         public override void Write (Stream file, ImageData image)

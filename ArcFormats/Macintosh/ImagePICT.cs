@@ -249,7 +249,7 @@ namespace GameRes.Formats.Apple
                                 var White = Color.FromArgb (0xFF, 0xFF, 0xFF);
                                 for (int i = 0; i < colors; i++)
                                 {
-                                    colormap[i] = Color.Subtract (White, colormap[i]);
+                                    colormap[i] = ColorCompat.Subtract (White, colormap[i]);
                                 }
                             }
                         }

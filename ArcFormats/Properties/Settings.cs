@@ -2,8 +2,6 @@
 using NetFrameworkCompat.Drawing;
 using System;
 
-using System.Windows.Threading;
-
 namespace GameRes.Formats.Properties {
     
     

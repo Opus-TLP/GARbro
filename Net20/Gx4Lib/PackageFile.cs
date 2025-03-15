@@ -27,6 +27,7 @@ using System;
 using System.IO;
 using System.Runtime.Serialization;
 using System.Runtime.Serialization.Formatters.Binary;
+#pragma warning disable SYSLIB0011
 
 namespace GameRes.Gx4Lib
 {
