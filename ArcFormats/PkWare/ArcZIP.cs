@@ -201,7 +201,7 @@ namespace GameRes.Formats.PkWare
 
         public override object GetAccessWidget ()
         {
-            return new GUI.WidgetZIP (DefaultScheme.KnownKeys);
+            return null;
         }
 
         // TODO: GUI widget for options

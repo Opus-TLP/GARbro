@@ -242,7 +242,7 @@ namespace GameRes.Formats.Entis
 
         public override object GetAccessWidget ()
         {
-            return new GUI.WidgetNOA();
+            return null;
         }
 
         internal static class EncType

@@ -392,7 +392,7 @@ namespace GameRes.Formats.Majiro
 
         public override object GetAccessWidget ()
         {
-            return new GUI.WidgetRCT();
+            return null;
         }
 
         public override void Write (Stream file, ImageData image)

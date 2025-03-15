@@ -380,12 +380,12 @@ NextEntry:
 
         public override object GetCreationWidget ()
         {
-            return new GUI.CreateXP3Widget();
+            return null;
         }
 
         public override object GetAccessWidget ()
         {
-            return new GUI.WidgetXP3();
+            return null;
         }
 
         ICrypt QueryCryptAlgorithm (ArcView file)

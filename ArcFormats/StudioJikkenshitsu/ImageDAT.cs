@@ -131,7 +131,7 @@ namespace GameRes.Formats.Jikkenshitsu
 
         public override object GetAccessWidget ()
         {
-            return new GUI.WidgetSJDAT (DefaultScheme.KnownSchemes.Keys);
+            return null;
         }
 
         internal byte[] QueryKey (string filename)

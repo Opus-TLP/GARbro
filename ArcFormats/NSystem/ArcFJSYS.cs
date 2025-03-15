@@ -127,7 +127,7 @@ namespace GameRes.Formats.NSystem
 
         public override object GetAccessWidget ()
         {
-            return new GUI.WidgetMSD();
+            return null;
         }
 
         public static Dictionary<string, string> KnownPasswords = new Dictionary<string, string>();

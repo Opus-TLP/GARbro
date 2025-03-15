@@ -235,7 +235,7 @@ namespace GameRes.Formats.Tamamo
 
         public override object GetAccessWidget ()
         {
-            return new GUI.WidgetPCK (KnownKeys.Keys.OrderBy (x => x));
+            return null;
         }
 
         public override ResourceOptions GetDefaultOptions ()
