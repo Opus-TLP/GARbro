@@ -329,7 +329,7 @@ namespace GameRes.Formats.Amaterasu
 
         public override object GetCreationWidget ()
         {
-            return new GUI.CreateAMIWidget();
+            return null;
         }
     }
 
