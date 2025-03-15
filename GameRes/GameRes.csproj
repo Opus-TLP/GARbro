@@ -14,6 +14,9 @@
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
     <RestorePackages>true</RestorePackages>
     <LangVersion>latest</LangVersion>
+    <Company>mørkt</Company>
+    <AssemblyVersion>1.5.44.321</AssemblyVersion>
+    <FileVersion>1.5.44.321</FileVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
