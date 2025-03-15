@@ -50,6 +50,8 @@
     </Reference> -->
   
     <PackageReference Include="NAudio" Version="2.2.1" />
+  
+    <PackageReference Include="System.ComponentModel.Composition" Version="9.0.3" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />

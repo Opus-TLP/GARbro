@@ -5,7 +5,7 @@
 
 using System.IO;
 using System.Collections.Generic;
-using NetFrameworkCompat;
+using System.ComponentModel.Composition;
 
 namespace GameRes
 {

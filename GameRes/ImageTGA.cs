@@ -24,11 +24,11 @@
 //
 
 using System;
+using System.ComponentModel.Composition;
 using System.IO;
 using System.Text;
 using System.Windows;
 using System.Drawing;
-using NetFrameworkCompat;
 using NetFrameworkCompat.Drawing;
 
 namespace GameRes

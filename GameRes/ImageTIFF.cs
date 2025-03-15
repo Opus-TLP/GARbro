@@ -28,7 +28,7 @@ using System.IO;
 using System.Text;
 using GameRes.Utility;
 using System.Collections.Generic;
-using NetFrameworkCompat;
+using System.ComponentModel.Composition;
 using NetFrameworkCompat.Drawing;
 
 namespace GameRes

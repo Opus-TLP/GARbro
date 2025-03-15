@@ -28,6 +28,7 @@ using System.IO;
 using System.IO.MemoryMappedFiles;
 using System.Runtime.InteropServices;
 using System.Text;
+using MemoryMappedFile = NetFrameworkCompat.MemoryMappedFile;
 
 namespace GameRes
 {
@@ -93,7 +94,7 @@ namespace GameRes
             return ptr;
         }
 
-        [DllImport("kernel32.dll", SetLastError = false)]
+        [DllImport("kernel32.dll", SetLastError = false)] // TODO: Fixme...
         internal static extern void GetSystemInfo (ref SYSTEM_INFO lpSystemInfo);
 
         [StructLayout (LayoutKind.Sequential)]
@@ -121,7 +122,7 @@ namespace GameRes
 
     public class ArcView : IDisposable
     {
-        private MemoryMappedFile    m_map;
+        private System.IO.MemoryMappedFiles.MemoryMappedFile    m_map;
 
         public const long           PageSize = 4096;
         public long                 MaxOffset { get; private set; }

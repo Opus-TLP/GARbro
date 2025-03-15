@@ -23,11 +23,11 @@
 // IN THE SOFTWARE.
 //
 
+using System.ComponentModel.Composition;
 using System.IO;
 using System.Linq;
 using System.Text;
 using GameRes.Utility;
-using NetFrameworkCompat;
 using NetFrameworkCompat.Drawing;
 
 namespace GameRes
